@@ -41,8 +41,17 @@ void tasky::on_btnAgregar_clicked()
     //Agregar tarea a una lista
     m_tareas.push_back(new Tarea (asignatura,fecha,hora,nombre));
 
+    int rowCount = ui->tblTareas->rowCount(); // Obtener el número actual de filas
+        ui->tblTareas->insertRow(rowCount); // Insertar una nueva fila al final
+
+        // Establecer los datos en la nueva fila
+        ui->tblTareas->setItem(rowCount, 0, new QTableWidgetItem(nombre)); // Columna 0: Nombre
+        ui->tblTareas->setItem(rowCount, 1, new QTableWidgetItem(asignatura)); // Columna 1: Asignatura
+        ui->tblTareas->setItem(rowCount, 2, new QTableWidgetItem(fecha.toString("dd/MM/yyyy"))); // Columna 2: Fecha (formateada)
+        ui->tblTareas->setItem(rowCount, 3, new QTableWidgetItem(hora.toString("hh:mm:ss"))); // Columna 3: Hora (formateada)
+    }
 
 
-    qDebug()<<t.nombre();
-}
+
+
 
