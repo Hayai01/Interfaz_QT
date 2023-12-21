@@ -16,7 +16,7 @@ private:
 
 public:
     explicit Tarea(QObject *parent = nullptr);
-    Tarea(const QString &asignatura, const QDate &fecha, const QTime &hora, const QString &nombre);
+    Tarea( const QString &nombre, const QString &asignatura, const QDate &fecha, const QTime &hora);
 
     const QString &nombre() const;
     void setNombre(const QString &newNombre);

@@ -52,8 +52,8 @@ Tarea::Tarea(QObject *parent)
 
 }
 
-Tarea::Tarea(const QString &asignatura, const QDate &fecha, const QTime &hora, const QString &nombre) : m_asignatura(asignatura),
+Tarea::Tarea(const QString &nombre, const QString &asignatura, const QDate &fecha, const QTime &hora) : m_nombre(nombre),
+    m_asignatura(asignatura),
     m_fecha(fecha),
-    m_hora(hora),
-    m_nombre(nombre)
+    m_hora(hora)
 {}

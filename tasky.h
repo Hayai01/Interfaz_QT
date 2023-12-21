@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QtDebug>
+#include <QMessageBox>
 
 #include "tarea.h"
 
@@ -20,6 +21,8 @@ public:
 
 private slots:
     void on_btnAgregar_clicked();
+    void agregarTarea(Tarea *t);
+    void limpiarBuffer();
 
 
 private:
