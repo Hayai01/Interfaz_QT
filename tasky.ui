@@ -218,6 +218,19 @@ color: rgb(246, 245, 244);</string>
      </item>
     </layout>
    </widget>
+   <widget class="QPushButton" name="backgroundButton">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>290</y>
+      <width>268</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Dark/Light Theme</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
